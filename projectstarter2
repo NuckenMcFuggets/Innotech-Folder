@@ -25,6 +25,9 @@ mkdir pages;
 curl http://ron-swanson-quotes.herokuapp.com/v2/quotes > index.html
 Echo 'all done!';
 
+cd
+cd Documents/Innotech/firstgit
+
 git add -A;
 git commit -m '$1';
 git branch -M main;
