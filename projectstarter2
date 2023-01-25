@@ -28,6 +28,7 @@ Echo 'all done!';
 cd
 cd Documents/Innotech/firstgit
 
+git init
 git add -A;
 git commit -m '$1';
 git branch -M main;
