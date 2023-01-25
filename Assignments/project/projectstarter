@@ -1,0 +1,26 @@
+Echo 'Creating a new project';
+mkdir project;
+cd project;
+touch index.html;
+
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$1</title>
+</head>
+<body>
+    <p>Hello World!</p>
+</body>
+</html>' >> index.html;
+
+mkdir css;
+touch css/style.css;
+mkdir js;
+touch js/app.js;
+mkdir images;
+mkdir pages;
+curl http://ron-swanson-quotes.herokuapp.com/v2/quotes > index.html
+Echo 'all done!';
