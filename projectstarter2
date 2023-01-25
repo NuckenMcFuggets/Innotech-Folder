@@ -1,0 +1,32 @@
+Echo 'Creating a new project';
+mkdir firstgit;
+cd firstgit;
+touch index.html;
+
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$1</title>
+</head>
+<body>
+    <p>Hello World!</p>
+</body>
+</html>' >> index.html;
+
+mkdir css;
+touch css/style.css;
+mkdir js;
+touch js/app.js;
+mkdir images;
+mkdir pages;
+curl http://ron-swanson-quotes.herokuapp.com/v2/quotes > index.html
+Echo 'all done!';
+
+git add -A;
+git commit -m '$1';
+git branch -M main;
+git remote add origin https://github.com/NuckenMcFuggets/W2A.git;
+git push -u origin main;
