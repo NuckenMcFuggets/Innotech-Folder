@@ -8,5 +8,5 @@ git init;
 git add -A;
 git commit -m 'This is an automated commit';
 git branch -M main;
-git remote add origin "https://github.com/NuckenMcFuggets/$3.git";
+git remote add origin "https://github.com/NuckenMcFuggets/$2.git";
 git push -u origin main;
